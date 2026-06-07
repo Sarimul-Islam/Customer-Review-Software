@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews</title>
+    <link rel="stylesheet" href="Custom_Styling.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Customer Reviews</h1>
+        <div class="review-form">
+            <input type="text" id="name" placeholder="Your Name">
+            <textarea id="review" placeholder="Write your review here..."></textarea>
+            <div class="rating">
+                <span class="emoji" onclick="selectRating('⭐️')">⭐️</span>
+                <span class="emoji" onclick="selectRating('😊')">😊</span>
+                <span class="emoji" onclick="selectRating('😐')">😐</span>
+                <span class="emoji" onclick="selectRating('😞')">😞</span>
+            </div>
+            <input type="hidden" id="rating">
+            <button onclick="submitReview()">Submit</button>
+        </div>
+        <div class="reviews" id="reviews"></div>
+    </div>
+    <script src="Software.js"></script>
+</body>
+</html>

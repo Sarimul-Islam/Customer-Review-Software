@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.review-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.review-form input,
+.review-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; /* Ensures the input boxes take up the full width */
+}
+
+.review-form button {
+    padding: 10px;
+    border: none;
+    background: #28a745;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.review-form button:hover {
+    background: #218838;
+}
+
+.rating {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+    justify-content: center;
+}
+
+.emoji {
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.emoji:hover {
+    transform: scale(1.2);
+}
+
+.reviews {
+    margin-top: 20px;
+}
+
+.review {
+    background: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.review h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.review p {
+    margin: 5px 0 0;
+    color: #666;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .emoji {
+        font-size: 20px;
+    }
+
+    .review-form input,
+    .review-form textarea,
+    .review-form button {
+        width: 100%; /* Ensures the elements take up full width on smaller screens */
+    }
+}
